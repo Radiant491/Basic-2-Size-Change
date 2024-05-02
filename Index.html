@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/plyr.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <style>
+      .button1 {
+        text-align: center;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body id="col">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html">
+                <img src="img/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="header__nav">
+              <nav class="header__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="./index.html">Homepage</a></li>
+                  <li>
+                    <a href="#"
+                      >Categories <span class="arrow_carrot-down"></span
+                    ></a>
+                  </li>
+                  <li><a href="#">Our Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="header__right">
+              <a href="#" class="search-switch"
+                ><span class="icon_search"></span
+              ></a>
+              <a href="#"><span class="icon_profile"></span></a>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+
+    <div class="button1">
+      <h1>Image Size Change</h1>
+      <img src="family.png" height="200px" width="200px" alt="" id="img" />
+      <button onclick="Images()">100px</button>
+      <button onclick="Image1()">200px</button>
+      <button onclick="Image2()">300px</button>
+      <button onclick="Images3()">400px</button>
+    </div>
+
+    <script>
+      let image = document.getElementById("img");
+      function Images(type) {
+        image.style = "width:100px;height:100px";
+      }
+      function Image1() {
+        image.style = "width:200px;height:200px";
+      }
+      function Image2() {
+        image.style = "width:300px;height:300px";
+      }
+      function Images3() {
+        image.style = "width:400px;height:400px";
+      }
+    </script>
+  </body>
+</html>
